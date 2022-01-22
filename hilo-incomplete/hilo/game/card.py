@@ -110,8 +110,3 @@ class Card:
     value = property(get_value, set_value)
 
 
-c = Card()
-
-for i in range(10):
-    c.shuffle()
-    print(c.card_name())
