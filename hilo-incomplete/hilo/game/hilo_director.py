@@ -60,9 +60,11 @@ class Director:
 
         print(f"Next card was: {dealt_card}")
         print(f"Your score is: {self.total_score}")
-        self.is_playing == (self.total_score > 0)
+        self.is_playing = self.total_score > 0
 
     def play_again(self):
+        if not self.is_playing:
+            return
         deal = ""
         while deal != "y" and deal != "n":
             deal = input("Play again? [y/n] ")
