@@ -1,18 +1,9 @@
 # Hilo
-Are you willing to risk everything? Play Hilo and you might be surprised. The rules are simple. Roll 
-the dice. Count the ones and fives. Each one is worth 100 and 50 points respectively. As long as you 
-roll at least a one or a five you can try again. If not the game is over.
+Wanna play a game of chance and sheer dumb luck...by guessing cards correctly? Then play Hilo and your desire will become a reality. The rules are simple. You start out with 300 points and a randomly chosen starting card. Then you are asked a simple question: "h" for High or "l" for Low. Each time you guess correctly, you get 100 points, Woohoo! But if you guess wrong, well, say goodbye to 75 points from your score. As long as your score stays above zero you can keep playing. But, If not then it is GAME-OVER.
 
 ## Getting Started
 ---
-Make sure you have Python 3.10.1 or newer installed and running on your machine. Open a terminal and 
-browse to the project's root folder. Start the program by running the following command.
-```
-python3 dice 
-```
-You can also run the program from an IDE like Visual Studio Code. Start your IDE and open the 
-project folder. Select the main module inside the dice folder and click the "run" (green triangle) 
-button.
+Make sure you have Python 3.10.1 or newer installed and running on your machine. Run the program from an IDE like Visual Studio Code. Start your IDE and open the project folder. Select the __main__.py module inside the hilo folder and click the "run" (green triangle) button.
 
 ## Project Structure
 ---
