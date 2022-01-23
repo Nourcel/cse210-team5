@@ -13,7 +13,7 @@ root                    (project root folder)
   +--__main__.py       (program entry point)
   +--README.md           (general info)
   +--modules            (specific classes)
-    +--card.py  (Main module for a simple card game)
+    +--card.py      (Main module for a simple card game)
     +--hilo_card.py 	(Card module with extras)
     +--hilo_director.py (Handle most of the game logic)
 
