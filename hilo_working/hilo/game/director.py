@@ -24,6 +24,7 @@ class Director:
             return
 
         card1 = Card()
+        card1.shuffle()
         card_dict = {card1.card_name(): card1.get_value()}
         self.first_card.update(card_dict)
 
@@ -32,28 +33,29 @@ class Director:
             card_value1 = value
         print(f"\nThe card is: {card_key1}")
 
-        self.draw_card = ""
-        self.draw_card = input("Higher or lower? [h/l] ").lower()
-        while self.draw_card != "h" and self.draw_card != "l":
+        draw_card = ""
+        draw_card = input("Higher or lower? [h/l] ").lower()
+        while draw_card != "h" and draw_card != "l":
             print("\nPlease Type h of Higher or l for Lower")
-            self.draw_card = input("Higher or lower? [h/l] ").lower()
+            draw_card = input("Higher or lower? [h/l] ").lower()
 
-        self.card2 = Card()
-        self.card_dict = {self.card2.card_name(): self.card2.get_value()}
-        self.next_card.update(self.card_dict)
+        card2 = Card()
+        card2.shuffle()
+        card_dict = {card2.card_name(): card2.get_value()}
+        self.next_card.update(card_dict)
 
         for key, value in self.next_card.items():
             card_key2 = key
             card_value2 = value
         print(f"Next card was: {card_key2}")
 
-        if card_value1 < card_value2 and self.draw_card == "h":
+        if card_value1 < card_value2 and draw_card == "h":
             self.points = 100
-        elif card_value1 > card_value2 and self.draw_card == "l":
+        elif card_value1 > card_value2 and draw_card == "l":
             self.points = 100
-        elif card_value1 > card_value2 and self.draw_card == "h":
+        elif card_value1 > card_value2 and draw_card == "h":
             self.points = -75
-        elif card_value1 < card_value2 and self.draw_card == "l":
+        elif card_value1 < card_value2 and draw_card == "l":
             self.points = -75
         else:
             self.points = 0
