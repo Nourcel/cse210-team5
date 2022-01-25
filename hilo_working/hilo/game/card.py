@@ -14,6 +14,10 @@ class Card:
      Attributes
      -----------
 
+     __values = contains a dictionary with all values
+     
+     __suits = contains a dictionary with all suits
+
      __value = (between 1-13)
      
      __suit = (between 1-4)
@@ -21,7 +25,7 @@ class Card:
      Methods
      ---------
 
-     Shuffle = Randomly change value and suit of card
+     shuffle = randomly change value and suit of card
      
      get_suit = return suit
      
@@ -99,6 +103,8 @@ class Card:
     def get_value(self):
         return self.__value
 
+    # Returns card value as a string
+
     def get_value_string(self):
 
         return self.__values[self.value]
@@ -113,6 +119,8 @@ class Card:
 
     def card_name(self):
         return (f"{self.get_value_string()} of {self.get_suit_string()}s")
+
+    # Properties
 
     suit = property(get_suit, set_suit)
 
